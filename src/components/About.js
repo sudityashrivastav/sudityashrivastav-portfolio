@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import changeTitle from '../utitls/changeTitle'
 
 const About = () => {
+    changeTitle("About | Suditya Shrivastav")
     return (
         <section className="pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] overflow-hidden">
             <div className="container">

@@ -8,6 +8,7 @@ const MobileOptions = ({ isOpen, setIsOpen }) => {
             <ul className="shrivastavG text-sm flex w-5/6 h-3/4 bg-bg_theme flex-col items-center justify-center gap-5">
 
                 <p className="font-bold my-3 text-2xl text-white">Menu</p>
+                <Link onClick={() => setIsOpen(false)} to="/" target="_blank" className="border-2 font-bold text-blue-600 hover:scale-90 transition-all hover:bg-blue-600 hover:text-white  border-blue-600 w-3/4 text-center px-8 py-3 rounded-full shadow-lg ">Home</Link>
                 
                 <Link onClick={() => setIsOpen(false)} to={"/projects"} className="border-2 font-bold text-purple-600 hover:scale-90 transition-all hover:bg-purple-600 hover:text-white  border-purple-600 w-3/4 text-center px-8 py-3 rounded-full shadow-lg ">Projects</Link>
 
@@ -15,7 +16,6 @@ const MobileOptions = ({ isOpen, setIsOpen }) => {
 
                 <Link onClick={() => setIsOpen(false)} to="/about" className="border-2 font-bold text-green-600 hover:scale-90 transition-all hover:bg-green-600 hover:text-white  border-green-600 w-3/4 text-center px-8 py-3 rounded-full shadow-lg ">About</Link>
 
-                <Link onClick={() => setIsOpen(false)} to="https://github.com/sudityashrivastav" target="_blank" className="border-2 font-bold text-blue-600 hover:scale-90 transition-all hover:bg-blue-600 hover:text-white  border-blue-600 w-3/4 text-center px-8 py-3 rounded-full shadow-lg ">Github</Link>
 
             </ul>
         </div>

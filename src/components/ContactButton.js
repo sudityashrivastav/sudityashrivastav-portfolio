@@ -1,14 +1,23 @@
-import whatsAppLogo from "../images/whatsapp.png"
-import contactLogo from "../images/svg.png"
+import { FaPhoneSquareAlt } from "react-icons/fa";
+import { RiTwitterXFill } from "react-icons/ri";
+import { IoLogoGithub } from "react-icons/io";
+import { FaLinkedin } from "react-icons/fa";
+
 const ContactButton = () => {
   return (
-    <div className='w-[40px] h-screen fixed top-9 right-0 flex justify-center items-center flex-col gap-5'>
+    <div className='w-[40px] hidden md:flex fixed top-1/2 md:top-1/3 py-4 rounded-md left-2 justify-center items-center flex-col gap-4 text-white z-50'>
 
-      <a href="tel:+91 9817500148">
-        <img alt="contact us" className="w-[27px] h-[27px]" src={contactLogo} />
+      <a className="text-xl pl-2 hover:bg-primary rounded-r-full py-1 w-full h-full duration-200" href="https://github.com/sudityashrivastav" target="_blank">
+        <IoLogoGithub className=""/>
       </a>
-      <a target="_blank" href="https://api.whatsapp.com/send?phone=+91%209817500148&text=Hello&type=phone_number&app_absent=0">
-        <img className="w-[30px] h-[30px]" alt="whatspplogo" src={whatsAppLogo} />
+      <a className="text-xl pl-2 hover:bg-primary rounded-r-full py-1 w-full h-full duration-200"  target="_blank" href="tel: +91 7408157036">
+        <FaPhoneSquareAlt />
+      </a>
+      <a className="text-xl pl-2 hover:bg-primary rounded-r-full py-1 w-full h-full duration-200"  target="_blank" href="https://x.com/IAmSuditya">
+        <RiTwitterXFill />
+      </a>
+      <a className="text-xl pl-2 hover:bg-primary rounded-r-full py-1 w-full h-full duration-200"  target="_blank" href="https://www.linkedin.com/in/suditya-kumar-b15163245">
+        <FaLinkedin />
       </a>
     </div>
   )

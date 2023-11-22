@@ -1,33 +1,33 @@
-import { useState, useEffect } from 'react'
-import Project from './Project'
 import axios from 'axios'
+import Project from './Project'
+import { useState, useEffect } from 'react'
 import { BallTriangle } from 'react-loader-spinner'
+import changeTitle from '../../utitls/changeTitle'
 
 const Projects = () => {
-  const [projectList, setprojectList] = useState("")
+  const [projectList, setprojectList] = useState({ total: 0, documents: [] })
   const [isLoading, setIsLoading] = useState(true)
+  
+  changeTitle("Projects | Suditya Shrivastav")
 
-async function fetchData() {
+  async function fetchData() {
 
     try {
       setIsLoading(true)
       const data = await axios.get("https://sudityashrivastav-backend.vercel.app/projects")
-      setprojectList(data.data)
-    }
 
+      setprojectList(data.data)
+      setIsLoading(false)
+    }
     catch (e) {
-      console.log(e);
       setIsLoading(false)
     }
   }
 
 
   useEffect(() => {
-    // fetchData()
+    fetchData()
 
-    setTimeout(() => {
-      setIsLoading(false)
-    }, 1000);
   }, [])
 
 
@@ -46,17 +46,19 @@ async function fetchData() {
         {/* text - end */}
         {
           isLoading === true ? <div className='grid place-items-center'><BallTriangle
-          height={40}
-          width={40}
-          radius={5}
-          color="#fff"
-          ariaLabel="ball-triangle-loading"
-          wrapperClass={{}}
-          wrapperStyle=""
-          visible={true}
-        /></div> : <div className="grid gap-5 sm:grid-cols-2 md:gap-6 xl:grid-cols-3 2xl:grid-cols-4 xl:gap-8">
-            <Project />
-          </div>
+            height={40}
+            width={40}
+            radius={5}
+            color="#fff"
+            ariaLabel="ball-triangle-loading"
+            wrapperClass={{}}
+            wrapperStyle=""
+            visible={true}
+          /></div> : <div className="grid gap-5 sm:grid-cols-2 md:gap-6 xl:grid-cols-3 2xl:grid-cols-4 xl:gap-8">{
+            projectList.documents.map((projectList) => (
+              <Project projectList={projectList} />
+            ))
+          }</div>
         }
 
       </div>

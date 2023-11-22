@@ -1,15 +1,16 @@
-const Project = () => {
+const Project = ({ projectList }) => {
+
   return (
     // article - start
     <div className="flex flex-col overflow-hidden rounded-lg bg-secondaryBlue">
       <a
-        href="#"
+        href={projectList.url}
         className="group relative block h-48 overflow-hidden md:h-64"
       >
         <img
-          src="https://cloud.appwrite.io/v1/storage/buckets/655cfb3d83460b6fca19/files/655cfba72c1fd1d1ae14/view?project=655b99c052cf8bae0c6f&mode=admin"
+          src={projectList.image}
           loading="lazy"
-          alt="Photo by Minh Pham"
+          alt="project Image"
           className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
         />
       </a>
@@ -19,11 +20,15 @@ const Project = () => {
             href="#"
             className="transition duration-100 hover:text-indigo-500 active:text-indigo-600"
           >
-            My Portfolio
+            {projectList.name}
           </a>
         </h2>
         <p className="mb-8 text-white ">
-        Explore my portfolio and discover a collection of projects that reflect not just my technical prowess but a dedication to delivering results that exceed expectations. Each line of code is a testament to my commitment to quality and innovation.
+          {
+
+            projectList.description.length < 130 ? projectList.description :
+              projectList.description.substring(0, 130) + "....."
+          }
         </p>
         <div className="mt-auto flex items-end justify-between">
           <a

@@ -30,10 +30,6 @@ body {
 font-family: 'Quicksand', sans-serif;
 }
 
-.courseBG{
-  background: url("./images/coursebg.png");
-}
-
 ::selection {
   background-color: #05EEFF;
   color: white;

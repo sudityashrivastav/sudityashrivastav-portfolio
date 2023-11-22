@@ -19,7 +19,7 @@ const MobileMenu = () => {
             navigate("/")
         }
         else if (icon === "icon3") {
-            navigate("/profile")
+            navigate("/contact")
         }
         if (icon === "icon2") {
             setIsOpen(!isOpen)

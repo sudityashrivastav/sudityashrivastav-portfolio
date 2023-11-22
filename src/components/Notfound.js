@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
+import changeTitle from '../utitls/changeTitle';
 
 const Notfound = () => {
+  changeTitle("Not Found | Suditya Shrivastav")
   return (
      <div className="pt-20 flex items-center justify-center h-screen">
       <div className="flex items-center justify-center py-12">

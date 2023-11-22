@@ -248,7 +248,7 @@ const Footer = () => {
                         {/* nav - end */}
                     </div>
                     <div className="border-t py-8 text-center font-semibold text-sm text-white">
-                        © {new Date().getFullYear()} - Present Your brand name All rights reserved.
+                        © 2023 - Created with ❤️ by Suditya Shrivastav.
                     </div>
                 </div>
             </div>

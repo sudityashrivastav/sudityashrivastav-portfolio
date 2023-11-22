@@ -1,15 +1,10 @@
-import axios from "axios";
-import React from "react";
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { BallTriangle } from "react-loader-spinner";
-import { useNavigate } from "react-router-dom";
+import changeTitle from "../utitls/changeTitle";
 
 const Contact = () => {
-
-
   const [isLoading, setIsLoading] = useState(false)
-
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -17,6 +12,7 @@ const Contact = () => {
     phone: ''
   });
 
+  changeTitle("Contact | Suditya Shrivastav")
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevData) => ({
@@ -33,29 +29,34 @@ const Contact = () => {
     setIsLoading(true)
     try {
 
-      const res = await axios.post("https://sudityashrivastav-backend.vercel.app/contact", formData).data
-      if (res.error) {
-        toast.error(res.error)
-      }
-      else {
-        toast.success(res.status)
+      let res = await fetch("http://127.0.0.1:3001/contact", {
+        method: "POST",
+        body: JSON.stringify(formData),
+        'Content-Type': 'application/json',
+      })
+
+
+      res = await res.json()
+
+      if (res.status) {
+        toast.success("I messege has been recieved.")
         setFormData({
           name: '',
           email: '',
           message: '',
           phone: ''
         })
-        setIsLoading(false)
       }
+      else{
+        toast.error(res.messege)
+      }
+      
+      setIsLoading(false)
+    }
 
-    } catch (error) {
-      setFormData({
-        name: '',
-        email: '',
-        message: '',
-        phone: ''
-      })
-      toast.error("Something went wrong")
+    catch (error) {
+
+      toast.error("Something went wrong. Try again later")
       console.log(error);
       setIsLoading(false)
     }
@@ -161,10 +162,9 @@ const Contact = () => {
                     onChange={handleChange}
                   />
                   <ContactInputBox
-                    type="text"
+                    type="number"
                     name="phone"
                     placeholder="Your Phone"
-
                     value={formData.phone}
                     onChange={handleChange} />
                   <ContactTextArea
@@ -1033,14 +1033,12 @@ const ContactInputBox = ({ type, placeholder, name, value, onChange }) => {
     <>
       <div className="mb-6">
         <input
-
           onChange={onChange}
           value={value}
           placeholder={placeholder}
           name={name}
           type={type}
           className="w-full rounded-full border-2 bg-gray-50 px-3 py-2 text-gray-800 outline-none transition duration-100"
-
         />
       </div>
     </>

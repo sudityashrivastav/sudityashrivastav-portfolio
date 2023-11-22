@@ -5,6 +5,7 @@ import Home from "./components/Home/Home";
 import Contact from "./components/Contact";
 import Notfound from "./components/Notfound";
 import ScrollToTop from "./utitls/scrollToTop";
+import { Analytics } from '@vercel/analytics/react';
 import MobileMenu from "./components/MobileMenu/MobileMenu";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ContactButton from "./components/ContactButton";
@@ -29,6 +30,7 @@ function App() {
             <Route path="*" element={<Notfound />} />
           </Routes>
           <ScrollToTop />
+          <Analytics />
           <ContactButton/>
           <Footer />
         </BrowserRouter>
