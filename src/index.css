@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+* {
+  outline: none;
+  scroll-behavior: smooth;
+  --tw-backdrop-grayscale: none;
+  --b1: none !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #06043E;
+  width: 100%;
+  height: 100dvh;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f0f0f0;
+}
+
+.Header {
+  backdrop-filter: blur(16px);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.shrivastavG{
+font-family: 'Quicksand', sans-serif;
+}
+
+.courseBG{
+  background: url("./images/coursebg.png");
+}
+
+::selection {
+  background-color: #05EEFF;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  width: 8px;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: #05EEFF;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #05EEFF;
+}
+
+
+
+
+/* background-color: #06043E */
+/* linear-gradient(99.16deg, #05EEFF 24.01%, rgb(0, 255, 240) 81.75%) */

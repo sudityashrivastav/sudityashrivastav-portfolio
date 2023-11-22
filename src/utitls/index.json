@@ -1,0 +1,95 @@
+{
+  "company": {
+    "name": "Suditya Shrivastav"
+  },
+  "mainHero": {
+    "title": "Suditya",
+    "subtitle": "Shrivastav",
+    "description": "Welcome to the ultimate tool for aspiring students to discover their best-fit colleges based on their academic achievements.",
+    "primaryAction": {
+      "text": "Resume",
+      "href": "#"
+    },
+    "secondaryAction": {
+      "text": "Email",
+      "href": "mailto:sudityakumar1@gmail.com"
+    }
+  },
+  "product": {
+    "title": "Suditya Shrivastav",
+    "items": [
+      {
+        "title": "Thoughts",
+        "description": "Explore my portfolio and discover a collection of projects that reflect not just my technical prowess but a dedication to delivering results that exceed expectations. Each line of code is a testament to my commitment to quality and innovation."
+      },
+      {
+        "title": "Features",
+        "description": "My skill set spans the entire spectrum of full-stack development, from front-end finesse to back-end brilliance. I thrive on the challenges of turning visions into reality, leveraging the latest technologies to build scalable, efficient, and user-friendly applications"
+      }
+    ]
+  },
+  "features": {
+    "title": "Your",
+    "subtitle": "More",
+    "description": "Welcome to the ultimate tool for aspiring students to discover their best-fit colleges based on their academic achievements.",
+    "items": [
+      {
+        "name": "Rank Trends",
+        "description": "Learn from the past to shape your future."
+      },
+      {
+        "name": "Explore & Excel",
+        "description": "Instantly explore options for a thriving college experience."
+      },
+      {
+        "name": "Guidance Hub",
+        "description": "xpert advice to navigate your path to acceptance."
+      },
+      {
+        "name": "Comprehensive Profiles",
+        "description": "In-depth details about potential laguagses at your fingertips."
+      }
+    ]
+  },
+  "about": {
+    "sections": [
+      {
+        "name": "Something",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "Something",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "Something",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "Something",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      }
+    ],
+    "socialMedia": {
+      "github": "https://github.com/sudityashrivastav",
+      "twitter": "https://twitter.com/sudityashrivastav",
+      "linkedin": "https://www.linkedin.com/in/sudityashrivastav/"
+    }
+  },
+  "pageTitles": {
+    "course": {
+      "mainTitle": "Courses",
+      "mainDesc": "Know the best best college by their reviews. In the Words of Students: Raw, Uncut, and Unfiltered College Reviews Providing True Insights",
+      "tag": "Buy Now"
+    },
+    "collegeReview": {
+      "mainTitle": "College Reviews",
+      "mainDesc": "Know the best best college by their reviews. In the Words of Students: Raw, Uncut, and Unfiltered College Reviews Providing True Insights",
+      "tag": "Read"
+    }
+  }
+}
