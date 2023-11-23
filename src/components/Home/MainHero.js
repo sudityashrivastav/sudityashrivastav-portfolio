@@ -18,9 +18,9 @@ const MainHero = () => {
         </p>
         <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
           <div className="flex justify-center items-center">
-            <Link to="./helllo.pdf" target="_blank" download className='p-3 text-sm px-10 rounded-full font-medium lg:block transition-all active:scale-90 bg-primary text-bg_theme hover:shadow-2xl hover:shadow-primary'>
+            <a href="./Suditya Shrivastav Resume.pdf" download className='p-3 text-sm px-10 rounded-full font-medium lg:block transition-all active:scale-90 bg-primary text-bg_theme hover:shadow-2xl hover:shadow-primary'>
               {mainHero.primaryAction.text}
-            </Link>
+            </a>
 
           </div>
           <div className="mt-3 flex justify-center sm:mt-0 sm:ml-3">

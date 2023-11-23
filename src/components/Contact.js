@@ -8,7 +8,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    message: '',
+    messege: '',
     phone: ''
   });
 
@@ -23,7 +23,7 @@ const Contact = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    if (formData.name.length < 1 || formData.email.length < 1 || formData.phone.length < 1 || formData.message.length < 1) {
+    if (formData.name.length < 1 || formData.email.length < 1 || formData.phone.length < 1 || formData.messege.length < 1) {
       return toast.error("Please enter all details")
     }
     setIsLoading(true)
@@ -32,9 +32,10 @@ const Contact = () => {
       let res = await fetch("http://127.0.0.1:3001/contact", {
         method: "POST",
         body: JSON.stringify(formData),
-        'Content-Type': 'application/json',
+        headers: {
+          'Content-Type': 'application/json',
+        }
       })
-
 
       res = await res.json()
 
@@ -43,14 +44,14 @@ const Contact = () => {
         setFormData({
           name: '',
           email: '',
-          message: '',
+          messege: '',
           phone: ''
         })
       }
-      else{
+      else {
         toast.error(res.messege)
       }
-      
+
       setIsLoading(false)
     }
 
@@ -117,7 +118,7 @@ const Contact = () => {
                       Phone Number
                     </h4>
                     <p className="text-base text-body-color">
-                      7408157036
+                      +91 7408157036
                     </p>
                   </div>
                 </div>
@@ -170,8 +171,8 @@ const Contact = () => {
                   <ContactTextArea
                     row="6"
                     placeholder="Your Message"
-                    name="message"
-                    value={formData.message}
+                    name="messege"
+                    value={formData.messege}
                     onChange={handleChange}
                   />
                   <div>

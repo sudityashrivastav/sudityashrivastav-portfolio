@@ -31,7 +31,7 @@ const Header = () => {
 
         </nav>
 
-        <Link to="./resume.pdf" target="_blank" download className='p-2 text-sm px-10 rounded-full font-medium lg:block transition-all active:scale-90 bg-primary text-bg_theme hover:shadow-2xl hover:shadow-primary'>Resume</Link>
+        <a href="./Suditya Shrivastav Resume.pdf" download className='p-2 text-sm px-10 rounded-full font-medium lg:block transition-all active:scale-90 bg-primary text-bg_theme hover:shadow-2xl hover:shadow-primary'>Resume</a>
       </div>
     </header>
   );

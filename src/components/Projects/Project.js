@@ -32,7 +32,7 @@ const Project = ({ projectList }) => {
         </p>
         <div className="mt-auto flex items-end justify-between">
           <a
-            href="https://github.com/sudityashrivastav"
+            href={projectList.url}
             target="_blank"
             download
             className="w-full p-2 text-sm px-10 rounded-full font-medium lg:block transition-all hover:scale-90 active:scale-90 bg-primary text-bg_theme text-center"
