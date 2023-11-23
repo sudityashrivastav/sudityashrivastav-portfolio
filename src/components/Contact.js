@@ -29,7 +29,7 @@ const Contact = () => {
     setIsLoading(true)
     try {
 
-      let res = await fetch("http://127.0.0.1:3001/contact", {
+      let res = await fetch("https://sudityashrivastav-backend.vercel.app/contact", {
         method: "POST",
         body: JSON.stringify(formData),
         headers: {
