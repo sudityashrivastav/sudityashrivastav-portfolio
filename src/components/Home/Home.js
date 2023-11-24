@@ -4,6 +4,7 @@ import Features from './Features'
 import Stats from './Stats'
 import Services from './Services'
 import changeTitle from '../../utitls/changeTitle'
+import Skills from '../Skills/Skills'
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
     return (
             <div className='bg-bg_theme text-white' >
                 <MainHero />
+                <Skills/>
                 <Product />
                 <Stats />
                 <Services />

@@ -1,0 +1,20 @@
+export const  skillsImages = [
+    { "fileName": "html", "name": "HTML", "desc": "HyperText Markup Language, the standard markup language for creating web pages and web applications" },
+    { "fileName": "css", "name": "CSS", "desc": "Cascading Style Sheets, used to style and format the visual presentation of HTML documents" },
+    { "fileName": "js", "name": "JavaScript", "desc": "A versatile scripting language primarily used to enhance interactivity and dynamic content on websites" },
+    { "fileName": "reactjs", "name": "ReactJs", "desc": "A JavaScript library for building user interfaces, particularly for creating single-page applications" },
+    { "fileName": "tailwind", "name": "TailwindCSS", "desc": "A utility-first CSS framework that makes it easy to design and build modern, responsive user interfaces" },
+    { "fileName": "nextjs", "name": "NextJs", "desc": "A React framework for building server-side rendered and statically generated web applications" },
+    { "fileName": "nodejs", "name": "NodeJs", "desc": "A JavaScript runtime built on Chrome's V8 JavaScript engine, enabling server-side scripting" },
+    { "fileName": "express", "name": "Express", "desc": "A minimalist web application framework for Node.js, facilitating the creation of robust APIs" },
+    { "fileName": "redux", "name": "Redux", "desc": "A predictable state container for JavaScript apps, commonly used with React for managing application state" },
+    { "fileName": "docker", "name": "Docker", "desc": "A platform for developing, shipping, and running applications in containers, ensuring consistency across different environments" },
+    { "fileName": "ts", "name": "TypeScript", "desc": "A superset of JavaScript that adds static typing and other features to enhance code maintainability" },
+    { "fileName": "mongo", "name": "MongoDB", "desc": "A NoSQL database that uses a document-oriented data model, commonly used for scalable and flexible applications" },
+    { "fileName": "git", "name": "Git", "desc": "A distributed version control system for tracking changes in source code during software development" },
+    { "fileName": "github", "name": "Github", "desc": "A web-based platform for version control and collaboration, widely used for hosting and managing Git repositories" },
+    { "fileName": "python", "name": "Python", "desc": "A high-level, general-purpose programming language known for its readability and versatility in various applications" },
+    { "fileName": "wordpress", "name": "WordPress", "desc": "A popular content management system (CMS) that allows users to create and manage websites easily, known for its flexibility and extensive plugin ecosystem" },
+    { "fileName": "more", "name": "Many More", "desc": "And many other and learning programming languages still I am learning and keeping myself up to date towards new technologies " },
+  ];
+  
