@@ -9,10 +9,10 @@ const Product = () => {
 
       <div className="mb-8 md:mb-12">
         <h2 className="mb-4 text-center text-2xl font-extrabold text-primary  md:mb-6 lg:text-3xl">
-        Portfolio
+        About
         </h2>
         <p className="mx-auto max-w-screen-md text-center text-white md:text-lg">
-        Explore my portfolio and discover a collection of projects that reflect not just my technical prowess but a dedication to delivering results that exceed expectations. Each line of code is a testament to my commitment to quality and innovation.
+        I am a dedicated and results-driven software developer with a proven track record of excellence in frontend development. I have a knack for crafting responsive and user-friendly web interfaces using cutting-edge technologies like NextJS, ReactJS, TypeScript etc. My experience ranges from leading teams and architecting projects to tackling complex challenges, such as boosting code coverage and optimizing system performance.
         </p>
       </div>
 
